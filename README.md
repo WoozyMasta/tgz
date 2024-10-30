@@ -3,6 +3,15 @@
 The `tgz` package provides a simple way to create and extract `tar.gz`
 archives in Go.
 
+```go
+import github.com/woozymasta/tgz
+
+func main() {
+  tgz.Pack("source/directory", "archive.tar.gz")
+  tgz.Unpack("archive.tar.gz", "output/directory")
+}
+```
+
 * **Support for Relative Paths**: Archives can include files and directories
   using relative paths, ensuring compatibility with various directory
   structures and simplifying file organization.
@@ -49,15 +58,6 @@ Functions:
   Extracts a `tar.gz` archive `sourceArchive` into the specified `targetDir`.
 
 ## Examples
-
-```go
-import github.com/woozymasta/tgz
-
-func main() {
-  tgz.Pack("source/directory", "archive.tar.gz")
-  tgz.Unpack("archive.tar.gz", "output/directory")
-}
-```
 
 ### Creating archive
 
