@@ -105,3 +105,9 @@ if err != nil {
 ```bash
 go test ./...
 ```
+
+## Other archive packages
+
+* [ZIPp Package](https://github.com/WoozyMasta/zipp) -
+  simple way to create and extract .zip archives
+
